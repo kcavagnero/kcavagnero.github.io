@@ -11,7 +11,7 @@
 
 
 
-<title>About me</title>
+<title>Kellen James Cavagnero</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -261,6 +264,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -268,6 +334,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -280,13 +356,13 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kellen J. Cavagnero</a>
+      <a class="navbar-brand" href="index.html">Inflammatory Content</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -294,28 +370,37 @@ $(document).ready(function () {
   <a href="https://soundcloud.com/kellen-cavagnero">Podcast</a>
 </li>
 <li>
-  <a href="KC_CV_210414.pdf">CV</a>
+  <a href="https://www.youtube.com/channel/UC9cdBEY6v0tUk-3vJXuB82Q">Recorded Talks</a>
 </li>
 <li>
-  <a href="https://www.youtube.com/channel/UC9cdBEY6v0tUk-3vJXuB82Q">Recorded Talks</a>
+  <a href="https://facultyopinions.com/prime/thefaculty/member/1099997">Article Recommendations</a>
+</li>
+<li>
+  <a href="KC_CV_210414.pdf">CV</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
+  <a href="mailto:&lt;kcavagnero@gmail.com&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="https://scholar.google.com/citations?user=FDkZPAMAAAAJ&amp;hl=en&amp;oi=ao">
-    <span class="fa fa-google"></span>
+    <span class="fa fa-google fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://twitter.com/KellenCavagnero">
-    <span class="fa fa-twitter"></span>
+    <span class="fa fa-twitter fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://linkedin.com/in/kellen-cavagnero-1612a360">
-    <span class="fa fa-linkedin"></span>
+    <span class="fa fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -328,16 +413,37 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About me</h1>
+<h1 class="title toc-ignore">Kellen James Cavagnero</h1>
 
 </div>
 
 
 <p><img src="files/headshot.jpeg" style="width:25%"></p>
-<p>Hi! My name is Kellen Cavagnero, and I am a biomedical scientist.</p>
+<div id="about-me" class="section level2">
+<h2>About me</h2>
+<p>Hello world! My name is Kellen Cavagnero, and I am a biomedical scientist. Currently, I am a Ph.D. student at the University of California, San Diego, where I am completing my thesis work under the mentorship of Dr. Richard Gallo. Much of my time is spent either in the lab running experiments and teaching students or on the computer analyzing data, writing, and recording podcasts. When I’m not working, I enjoy spending time with friends and family and outdoor activities like surfing, hiking, and scuba diving.</p>
+</div>
+<div id="research" class="section level2">
+<h2>Research</h2>
+<p>My mission is to better understand the immune system so that we can more effectively treat patients suffering from conditions ranging from infectious disease to autoimmunity, allergy, and cancer. Specifically, my research has focused on the role of historically underappreciated players in innate immunity: ILC2s, the microbiome, and fibroblasts.</p>
+<div id="ilc2s" class="section level3">
+<h3>ILC2s</h3>
+<p>Adaptive T helper 2 cells were long considered the sole drivers of allergic disease. Circa 2010, it became clear that allergen sensitization was not required to elicit an allergic response. This realization facilitated the discovery of group 2 innate lymphoid cells (ILC2s) and their role as drivers of innate allergic airway inflammation. Following completion of my bachelor’s degree in 2014, I joined the lab of Dr. Taylor Doherty–a pioneer in the ILC2 field. There, I conducted independent research investigating ILC2 biology and innate allergic airway inflammation until I started my Ph.D. in 2019. With Dr. Doherty and others in the Doherty lab, I made several novel and significant contributions to the field including the discoveries of both unconventional ILC2s and ILC2 involvement in aspirin exacerbated respiratory disease (both published in the <em>Journal of Allergy and Clinical Immunology</em>).</p>
+</div>
+<div id="the-microbiome" class="section level3">
+<h3>The microbiome</h3>
+<p>As my career has progressed, two concepts have become increasingly apparent: i) it is essential for a scientist to possess computational skills and ii) the microbiome is a vital constituent of the immune system. To simultaneously improve my programming abilities and better understand the complexities of the microbiome, I completed the first research rotation of my Ph.D. in the lab of Dr. Rob Knight. There, I led an investigation into the effect of sample storage on fecal microbiome composition using 16S rDNA and shotgun metagenomic sequencing that was published in <em>mSystems</em> in 2021.</p>
+</div>
+<div id="fibroblasts" class="section level3">
+<h3>Fibroblasts</h3>
+<p>In 2015, the Gallo lab discovered that dermal fibroblasts–cells once thought to simply support tissue architecture–are critical for defense against the highly pathogenic microbe, MRSA. More recently, the lab demonstrated that colon fibroblasts are essential for maintaining gut barrier integrity. My thesis work in the Gallo lab focuses on understanding the mechanisms underlying stromal fibroblast immunity at barrier tissues.</p>
+</div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -370,6 +476,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
