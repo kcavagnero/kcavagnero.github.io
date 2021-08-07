@@ -1,0 +1,6 @@
+name: "Kellen-website"
+navbar:
+  title: "Kellen J. Cavagnero"
+  left:
+    - icon: fa-home
+      href: index.html
