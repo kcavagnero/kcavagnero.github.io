@@ -1,7 +1,0 @@
----
-title: "About me"
----
-
-<img src="files/headshot.jpeg" style="width:25%">
-
-Hi! My name is Kellen Cavagnero, and I am a biomedical scientist.
