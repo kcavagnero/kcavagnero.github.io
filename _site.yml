@@ -4,3 +4,16 @@ navbar:
   left:
     - icon: fa-home
       href: index.html
+    - text: "Podcast"
+      href: https://soundcloud.com/kellen-cavagnero
+    - text: "CV"
+      href: KC_CV_210414.pdf
+    - text: "Recorded Talks"
+      href: https://www.youtube.com/channel/UC9cdBEY6v0tUk-3vJXuB82Q
+  right:
+    - icon: fa-google
+      href: https://scholar.google.com/citations?user=FDkZPAMAAAAJ&hl=en&oi=ao
+    - icon: fa-twitter
+      href: https://twitter.com/KellenCavagnero
+    - icon: fa-linkedin
+      href: https://linkedin.com/in/kellen-cavagnero-1612a360
