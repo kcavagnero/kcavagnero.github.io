@@ -1,0 +1,15 @@
+---
+title: "Kellen Cavagnero, Ph.D."
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<img src="files/headshot.jpeg" style="width:25%">
+
+About me
+---------------
+Hello world! I am a biomedical scientist, specialized in immunology. Here you will find links to my CV, the Inflammatory Content Podcast, recorded talks, article recommendations, and my Google Scholar, X, and LinkedIn profiles.
+
+
