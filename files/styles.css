@@ -1,0 +1,216 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #34495e;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #3498db;
+}
+
+/* Main content */
+.main-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+/* Headshot */
+.headshot {
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+}
+
+.headshot:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .headshot {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: transparent;
+    color: #333;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Ensure no blue background on any paragraphs */
+p {
+    background-color: transparent;
+}
+
+/* Remove any potential list styling in the footer */
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    background-color: transparent;
+}
+
+/* Table of Contents */
+#TOC {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#TOC ul {
+    padding-left: 20px;
+}
+
+/* Podcast link buttons */
+.podcast-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-podcast {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-podcast:hover {
+  background-color: #e9ecef;
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-podcast i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+/* Platform-specific colors on hover */
+.btn-podcast:hover .fa-youtube {
+  color: #FF0000;
+}
+
+.btn-podcast:hover .fa-spotify {
+  color: #1DB954;
+}
+
+.btn-podcast:hover .fa-soundcloud {
+  color: #FF3300;
+}
+
+.btn-podcast:hover .fa-apple {
+  color: #A3AAAE;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-right: 20px; /* Space between image and text */
+    margin-bottom: 15px; /* Space below the image */
+    margin-top: -65px; /* Move the image up by 10px */
+}
+
+.logo {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;   /* Space between the image and text */
+    margin-bottom: 15px;  /* Space below the image */
+    float: right;
+    display: inline-block; /* Ensures image behaves like inline element */
+}
